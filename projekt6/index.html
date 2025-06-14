@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Project 6 - Contact Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- Heebo Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Top yellow stripe -->
+      <div class="top-yellow-line"></div>
+
+      <div class="content">
+        <!-- Left side with image -->
+        <div class="left">
+          <img src="images/Image 1.png" alt="Phone Chat" />
+        </div>
+
+        <!-- Right side with form -->
+        <div class="right">
+          <!-- WhatsApp button -->
+          <a href="#" class="whatsapp-button" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+
+          <h1>Contact Us</h1>
+          <p>
+            We’re here for you! Feel free to leave your details,<br />
+            and an expert will get back to you shortly.
+          </p>
+
+          <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message"></textarea>
+
+            <button type="submit">Submit</button>
+          </form>
+
+          <!-- Social icons -->
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook">
+              <div class="social-icon-circle">
+                <i class="fab fa-facebook-f"></i>
+              </div>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <div class="social-icon-circle">
+                <i class="fab fa-instagram"></i>
+              </div>
+            </a>
+            <a href="tel:000000000" aria-label="Phone">
+              <div class="social-icon-circle">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+            </a>
+          </div>
+
+          <!-- Bottom yellow stripe -->
+          <div class="bottom-yellow-line"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

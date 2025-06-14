@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Heebo', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: white;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-section {
+    width: 60%;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-section {
+    width: 40%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #ffffff;
+    color: #020253;
+    text-align: left;
+}
+
+/* Title (h1) — Heebo Black, 43px */
+.form-section h1 {
+    font-size: 43px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+/* Description (p) — Heebo Regular, 20px */
+.form-section p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+/* Labels — Heebo Bold, 16px */
+label {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+/* Input fields — 50px height, 417px width */
+input {
+    margin-bottom: 20px;
+    padding: 0 10px;
+    height: 50px;
+    width: 417px;
+    border: none;
+    border-bottom: 2px solid #020253;
+    background-color: #F6F6F6;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Submit button — Heebo Bold, 22px, 50px height, 166px width */
+button {
+    background-color: #020253;
+    color: white;
+    border: none;
+    height: 50px;
+    width: 166px;
+    font-size: 22px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1a1a6e;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .image-section {
+        width: 100%;
+        height: auto;
+    }
+
+    .image-section img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .form-section {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .form-section h1,
+    .form-section p,
+    form {
+        align-items: center;
+    }
+
+    input {
+
+        max-width: 417px;
+    }
+
+    button {
+        width: 417px;
+        max-width: 417px;
+    }
+}
